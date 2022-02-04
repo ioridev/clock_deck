@@ -13,8 +13,8 @@ class MyHomePage extends StatelessWidget {
       child: Scaffold(
         backgroundColor: Colors.black,
         body: Stack(
-          children: [
-            const Wallpepar(),
+          children: const [
+            Wallpepar(),
             Date(),
             Center(
               child: Clock(),
