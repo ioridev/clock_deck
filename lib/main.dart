@@ -1,3 +1,4 @@
+import 'package:clock_deck/util/bing_wallpepar.dart';
 import 'package:clock_deck/view/home.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
