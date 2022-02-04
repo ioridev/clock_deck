@@ -1,4 +1,4 @@
-import 'package:clock_deck/view/clock.dart';
+import 'package:clock_deck/view/home.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -28,20 +28,6 @@ class MyApp extends StatelessWidget {
         ),
       ),
       home: const MyHomePage(),
-    );
-  }
-}
-
-class MyHomePage extends StatelessWidget {
-  const MyHomePage({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.black,
-      body: Center(
-        child: Clock(),
-      ),
     );
   }
 }
