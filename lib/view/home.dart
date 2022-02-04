@@ -8,15 +8,17 @@ class MyHomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.black,
-      body: Stack(
-        children: [
-          Date(),
-          Center(
-            child: Clock(),
-          ),
-        ],
+    return SafeArea(
+      child: Scaffold(
+        backgroundColor: Colors.black,
+        body: Stack(
+          children: [
+            Date(),
+            Center(
+              child: Clock(),
+            ),
+          ],
+        ),
       ),
     );
   }
