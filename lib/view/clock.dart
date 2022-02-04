@@ -26,7 +26,7 @@ class _ClockState extends State<Clock> {
 
     return AutoSizeText(
       _timeString,
-      style: TextStyle(fontSize: size.height / 1.8),
+      style: TextStyle(fontSize: size.height / 1.8, color: Colors.white),
     );
   }
 
