@@ -6,7 +6,8 @@ import 'package:flutter/material.dart';
 
 class BingWallpepar {
   Future<String> getWallpepar() async {
-    final response = await http.get(Uri.parse('https://bing.biturl.top/'));
+    final response = await http.get(Uri.parse(
+        'https://bing.biturl.top/?resolution=3840&format=json&index=0&mkt=random'));
     final body = utf8.decode(response.bodyBytes);
     if (response.statusCode != 200) {
       debugPrint('response.body$body');
