@@ -26,7 +26,17 @@ class _DateState extends State<Date> {
 
     return AutoSizeText(
       _timeString,
-      style: TextStyle(fontSize: size.height / 10, color: Colors.white),
+      style: TextStyle(
+        fontSize: size.height / 10,
+        color: Colors.white,
+        shadows: const <Shadow>[
+          Shadow(
+            offset: Offset(3.0, 3.0),
+            blurRadius: 12,
+            color: Colors.black45,
+          ),
+        ],
+      ),
     );
   }
 
