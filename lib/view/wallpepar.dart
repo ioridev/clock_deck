@@ -9,6 +9,8 @@ class Wallpepar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final Size size = MediaQuery.of(context).size;
+
     return SafeArea(
       child: FutureBuilder(
         future: BingWallpepar().getWallpepar(),
@@ -16,7 +18,9 @@ class Wallpepar extends StatelessWidget {
           if (snapshot.hasData) {
             return Image.network(
               snapshot.data as String,
-              fit: BoxFit.fill,
+              fit: BoxFit.cover,
+              width: size.width,
+              height: size.height,
             );
           } else {
             return Container();

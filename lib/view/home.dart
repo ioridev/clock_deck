@@ -14,7 +14,7 @@ class MyHomePage extends StatelessWidget {
         backgroundColor: Colors.black,
         body: Stack(
           children: [
-            Wallpepar(),
+            const Wallpepar(),
             Date(),
             Center(
               child: Clock(),
