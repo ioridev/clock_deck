@@ -39,6 +39,6 @@ class _ClockState extends State<Clock> {
   }
 
   String _formatDateTime(DateTime dateTime) {
-    return DateFormat('hh:mm').format(dateTime);
+    return DateFormat.Hm().format(dateTime);
   }
 }
