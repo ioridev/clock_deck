@@ -12,8 +12,8 @@ class BingWallpepar {
       debugPrint('response.body$body');
     }
     final json = jsonDecode(body) as Map<String, dynamic>;
-    print('json$json');
-    print(json['url']);
+    debugPrint('json$json');
+    debugPrint(json['url']);
     final url = json['url'];
     return url;
   }
