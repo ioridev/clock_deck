@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
 class Date extends StatefulWidget {
-  Date({Key? key}) : super(key: key);
+  const Date({Key? key}) : super(key: key);
 
   @override
   _DateState createState() => _DateState();
@@ -16,7 +16,7 @@ class _DateState extends State<Date> {
   @override
   void initState() {
     _timeString = _formatDateTime(DateTime.now());
-    Timer.periodic(Duration(seconds: 1), (Timer t) => _getTime());
+    Timer.periodic(const Duration(seconds: 1), (Timer t) => _getTime());
     super.initState();
   }
 
