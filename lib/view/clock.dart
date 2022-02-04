@@ -22,7 +22,12 @@ class _ClockState extends State<Clock> {
 
   @override
   Widget build(BuildContext context) {
-    return AutoSizeText(_timeString);
+    final Size size = MediaQuery.of(context).size;
+
+    return AutoSizeText(
+      _timeString,
+      style: TextStyle(fontSize: size.height / 1.8),
+    );
   }
 
   void _getTime() {
